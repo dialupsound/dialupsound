@@ -1,0 +1,114 @@
+html, body {
+  font-family: 'Helvetica Neue', 'Helvetica', 'Arial', sans-serif;
+  background-color: #b0b0b0;
+  height: 100%;
+  width: 100%;
+  text-align: center;
+  min-width: 750px;
+  font-size: 0;
+}
+
+body:before {
+  content: '';
+  display: inline-block;
+  vertical-align: middle;
+  height: 100%;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background: rgba(0, 0, 0, 0.8);
+  font-weight: bold;
+  color: #fff;
+  z-index: 2;
+}
+
+.overlay:before {
+  content: '';
+  display: inline-block;
+  vertical-align: middle;
+  height: 100%;
+}
+
+.overlay p {
+  display: inline-block;
+  height: 100px;
+  line-height: 100px;
+  border: 5px solid #006699;
+  border-radius: 50px;
+  font-size: 50px;
+  background: #000;
+  padding: 0 50px;
+}
+
+.container {
+  display: inline-block;
+  vertical-align: middle;
+  text-align: center;
+  width: 728px;
+  padding: 25px 0;
+}
+
+.aol {
+  margin: 0 auto;
+  height: 247px;
+  width: 407px;
+  background-image: url('../images/aol.png');
+  background-position: center top;
+}
+
+.aol.connecting {
+  background-position: center center;
+}
+
+.aol.connected {
+  background-position: center bottom;
+}
+
+.horizontal {
+  margin: 0 auto;
+  margin-top: 50px;
+  width: 728px;
+  height: 90px; 
+}
+
+.horizontal.udid {
+  height: auto;
+  border-radius: 5px;
+  border: 1px solid #999;
+  background: #ededed;
+  text-align: center;
+}
+
+.horizontal.udid:hover {
+  background: #fafafa;
+}
+
+.horizontal.udid:active {
+  background: #ccc;
+}
+
+.horizontal.udid a {
+  display: block;
+  text-decoration: none;
+  color: inherit;
+  padding: 20px;
+}
+
+.horizontal.udid h1 {
+  color: #333333;
+  font-size: 24px;
+}
+
+.horizontal.udid h1 a {
+  padding-bottom: 0;
+}
+
+.horizontal.udid h2 {
+  color: #666;
+  font-size: 16px;
+}
